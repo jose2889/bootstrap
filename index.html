@@ -10,23 +10,27 @@
         .color1{background: blue}
         .color2{background: green}
         .color3{background: orangered}
-        .color4{background: burlywood}
+        .color4{background: burlywood; height: 400px;}
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body>
-       <div class="container">
-           <div class="row">
-               <div class="col-sm-12 borde color1">HEADER</div>
-           </div>
-           <div class="row">
-               <div class="col-sm-6 col-md-3 borde color2 d-none d-sm-block">IZQUIERDA</div>
-               <div class="col-sm-6 col-md-6 borde color3">CONTENIDO</div>
-               <div class="col-sm-12 col-md-3 borde color4">DERECHA</div>
-           </div>
-           <div class="row">
-               <div class="col-sm-12 borde color1">FOOTER</div>
+      <div class="container"><h1>Alineamientos</h1></div>
+       <div class="container-fluid">
+           <div class="row color4 align-items-center justify-content-center justify-content-between">
+               <div class="borde color1 col-1">1</div>
+               <div class="borde color1 col">2
+                   <div class="row">
+                       <div class="col color3">sub1</div>
+                       <div class="col color3">sub2</div>
+                       <div class="col color3">sub3</div>
+                   </div>
+               </div>
+               <div class="borde color1 col-1 offset-md-3">3</div>
+               <div class="borde color1 col-1">4</div>
+               <div class="borde color1 col-1 flex-first">5</div>
+               <div class="borde color1 col-1">6</div>
            </div>
        </div>
         

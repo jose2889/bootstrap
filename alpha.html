@@ -18,12 +18,61 @@
             background-position: center;
 
         }
+        .altura{
+          height: 100vh;
+        }
     </style>
   </head>
   <body>
-    <section class="container-fluid slider d-flex justify-content-center">
+    <!-- <section class="container-fluid slider d-flex justify-content-center">
         <h1 class="display-1">Bootstrap 4!</h1>
-    </section>    
+    </section>     -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active altura">
+            <img class="d-block w-100" src="imagenes/10.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>MINI Cooper</h3>
+                <p>Toda la información del equipamiento, colores, precios, datos técnicos y fotos de las versiones de MINI Cooper disponibles en el mercado. </p>
+              </div>
+          </div>
+          <div class="carousel-item altura">
+            <img class="d-block w-100" src="imagenes/crojo.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>MINI Cooper</h3>
+                <p>Toda la información del equipamiento, colores, precios, datos técnicos y fotos de las versiones de MINI Cooper disponibles en el mercado. </p>
+              </div>
+          </div>
+          <div class="carousel-item altura">
+            <img class="d-block w-100" src="imagenes/13.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>MINI Cooper</h3>
+                <p>Toda la información del equipamiento, colores, precios, datos técnicos y fotos de las versiones de MINI Cooper disponibles en el mercado. </p>
+              </div>
+          </div>
+          <div class="carousel-item altura">
+              <img class="d-block w-100" src="imagenes/15.jpg" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>MINI Cooper</h3>
+                  <p>Toda la información del equipamiento, colores, precios, datos técnicos y fotos de las versiones de MINI Cooper disponibles en el mercado. </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
     <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
         <a class="navbar-brand" href="#">
             <img src="imagenes/angular.svg" width="30" height="30" class="align-top d-inline-block" alt="logo angular">Angular
